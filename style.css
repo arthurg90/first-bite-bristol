@@ -14,3 +14,20 @@
 --------------------------------------------------------------*/
 body {
   background-color: #f6efef; }
+
+.site-header {
+  background-color: #d62020;
+  max-width: 100%;
+  border-bottom: 10px solid #9c0a0a; }
+
+.main-navigation a {
+  font-size: 28px;
+  color: white; }
+
+.main-navigation a:hover {
+  color: #15d475; }
+
+.custom-logo {
+  position: relative;
+  justify-content: center;
+  max-width: 100%; }
