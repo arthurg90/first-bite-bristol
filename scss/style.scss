@@ -19,11 +19,9 @@
 
 // 1.
 
-
 body {
-	background-color: #f6efef;
+	background-color: white;
 }
-
 
 
 // 2.
@@ -35,6 +33,14 @@ body {
 }
 
 
+.col-5-12 {		//nav links menu
+	width: 100%;
+}
+
+.col-4-12 {
+
+}
+
 .main-navigation a {
 	font-size: 28px;
 	color: white;
@@ -44,9 +50,13 @@ body {
 	color: #15d475;
 }
 
-.custom-logo {
-	position: relative;
-	justify-content: center;
-	max-width: 100%;
-}
+// .site-branding {			//the logo
+//   	padding-right: 0;
+//   	width: 10%;
+//   	float: none;
+//   	display: block;
+//   	margin: 0 auto;
+  	
+// }
+
 
