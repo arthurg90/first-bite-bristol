@@ -20,6 +20,14 @@ body {
   max-width: 100%;
   border-bottom: 10px solid #9c0a0a; }
 
+.col-8-12 {
+  margin-top: 20px;
+  padding-right: 40px;
+  padding-left: 40px; }
+
+.col-4-12 {
+  margin-top: 50px; }
+
 .col-5-12 {
   width: 100%; }
 
@@ -29,3 +37,6 @@ body {
 
 .main-navigation a:hover {
   color: #15d475; }
+
+input.search-field {
+  background: #f0f0f0; }

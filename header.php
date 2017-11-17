@@ -24,9 +24,11 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hoteli' ); ?></a>
 
 	<header id="masthead" class="site-header grid-mid" role="banner">
+		
+		<!--  remove the logo from site header
 		<div class="site-branding col-2-12">
 			
-		<!--  remove the logo from site header
+		
 			<?php
 			    
                 $output = null;
@@ -39,9 +41,10 @@
                     $output .= '</a></h1>';
                 }
                 echo $output;	          
-            ?>	 -->						
+            ?>	 						
 
-		</div><!-- .site-branding -->
+		</div>.site-branding -->
+				
 		<div class="col-6-12">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i>
