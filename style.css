@@ -19,26 +19,41 @@ body {
   max-width: 100%;
   border-bottom: 10px solid #9c0a0a; }
 
-.col-5-12 {
+.site-nav {
   width: 100%; }
 
 .main-navigation a {
-  font-size: 28px;
+  font-size: 24px;
   color: white; }
 
 .main-navigation li:nth-child(-n+2) {
-  float: left; }
+  float: left;
+  left: 20%;
+  margin-right: 5%; }
 
 .main-navigation li:nth-child(n+3) {
-  border: 2px solid yellow;
   position: relative;
-  float: right; }
+  float: right;
+  right: 20%;
+  margin-left: 5%; }
 
 .main-navigation a:hover {
   color: #15d475; }
 
 #masthead {
   padding: 0; }
+
+.site-logo {
+  position: absolute;
+  z-index: 1;
+  max-width: 10%;
+  height: auto;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+a.custom-logo-link:hover {
+  opacity: 0.7; }
 
 .col-8-12 {
   margin-top: 100px;
