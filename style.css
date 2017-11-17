@@ -9,8 +9,7 @@
 ----------------------------------------------------------------
 1. Global styles
 2. Specific styles
-3.
-4.
+
 --------------------------------------------------------------*/
 body {
   background-color: white; }
@@ -20,14 +19,6 @@ body {
   max-width: 100%;
   border-bottom: 10px solid #9c0a0a; }
 
-.col-8-12 {
-  margin-top: 20px;
-  padding-right: 40px;
-  padding-left: 40px; }
-
-.col-4-12 {
-  margin-top: 50px; }
-
 .col-5-12 {
   width: 100%; }
 
@@ -35,8 +26,35 @@ body {
   font-size: 28px;
   color: white; }
 
+.main-navigation li:nth-child(-n+2) {
+  float: left; }
+
+.main-navigation li:nth-child(n+3) {
+  border: 2px solid yellow;
+  position: relative;
+  float: right; }
+
 .main-navigation a:hover {
   color: #15d475; }
 
+#masthead {
+  padding: 0; }
+
+.col-8-12 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-right: 40px;
+  padding-left: 40px; }
+
+.col-4-12 {
+  margin-top: 100px; }
+
 input.search-field {
   background: #f0f0f0; }
+
+#colophon.site-footer {
+  background: #d62020;
+  padding: 2rem 0; }
+
+.site-info {
+  font-size: 14px; }

@@ -43,9 +43,29 @@
                 echo $output;	          
             ?>	 						
 
-		</div>.site-branding -->
+		</div>
+		site-branding -->
 				
-		<div class="col-6-12">
+		<div class="site-nav">
+
+			<div class="site-logo">				
+			
+				<?php
+				    
+	                $output = null;
+
+	                if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
+	                    $output .= get_custom_logo();
+	                } else {
+	                    $output .= '<h1 class="site-title"><a href="'. esc_url( trailingslashit( home_url() ) ).'" title="'.esc_attr( get_bloginfo( 'name' ) ).'" rel="home">';
+	                    $output .= get_bloginfo( 'name' );
+	                    $output .= '</a></h1>';
+	                }
+	                echo $output;	          
+	            ?>	 						
+
+			</div>
+
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i>
 </button>

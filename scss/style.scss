@@ -12,8 +12,7 @@
 ----------------------------------------------------------------
 1. Global styles
 2. Specific styles
-3.
-4.
+
 --------------------------------------------------------------*/
 
 
@@ -26,27 +25,14 @@ body {
 
 // 2.
 
+//header stuff:
+
 .site-header {						//red nav menu header
 	background-color: #d62020;
 	max-width: 100%;
 	border-bottom: 10px solid #9c0a0a;
 
 }
-
-// .featured-image {
-// 	margin-bottom: 50px;
-// }
-
-.col-8-12 {					//margin for the main cols of the site-content at the top
-	margin-top: 20px;
-	padding-right: 40px;
-	padding-left: 40px;
-}
-
-.col-4-12 {					//margin for the side bar at the top
-	margin-top: 50px;
-}
-
 
 .col-5-12 {		//nav links menu
 	width: 100%;
@@ -55,11 +41,44 @@ body {
 .main-navigation a {
 	font-size: 28px;
 	color: white;
+	
 }
+
+.main-navigation li:nth-child(-n+2) {			//attempt to float the first 2 nav items left
+	float: left;
+}
+
+.main-navigation li:nth-child(n+3) {		//attempt to float the last 2 nav items right
+	border: 2px solid yellow;	
+	position: relative;
+	float: right;
+}
+
 
 .main-navigation a:hover {
 	color: #15d475;
 }
+
+#masthead {
+	padding: 0;
+}
+
+
+
+//main site content:
+
+.col-8-12 {					//margin for the main cols of the site-content at the top
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+.col-4-12 {					//margin at the top of the side bar
+	margin-top: 100px;
+}
+
+
 
 input.search-field {
 	background: #f0f0f0;
@@ -67,13 +86,15 @@ input.search-field {
 
 
 
-// .site-branding {			//the logo
-//   	padding-right: 0;
-//   	width: 10%;
-//   	float: none;
-//   	display: block;
-//   	margin: 0 auto;
-  	
-// }
+//footer stuff:
 
 
+#colophon.site-footer {
+	background: #d62020;
+	padding: 2rem 0;
+
+}
+
+.site-info {
+	font-size: 14px;
+}
