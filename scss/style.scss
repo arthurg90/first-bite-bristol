@@ -12,6 +12,7 @@
 ----------------------------------------------------------------
 1. Global styles
 2. Specific styles
+3. Media
 
 --------------------------------------------------------------*/
 
@@ -82,15 +83,21 @@ a.custom-logo-link:hover {
 
 
 
-
-
 //main site content:
+
+.featured-image {
+	max-height: 10%;
+}
+
+
+h1.page-title {
+	margin-left: 30px;
+}
 
 .col-8-12 {					//margin for the main cols of the site-content at the top
 	margin-top: 100px;
 	margin-bottom: 100px;
-	padding-right: 40px;
-	padding-left: 40px;
+	padding-right: 100px;
 }
 
 .col-4-12 {					//margin at the top of the side bar
@@ -103,6 +110,10 @@ input.search-field {
 	background: #f0f0f0;
 }
 
+#search-2 input.search-submit  {
+	background: #15d475;
+}
+
 
 
 //footer stuff:
@@ -111,9 +122,37 @@ input.search-field {
 #colophon.site-footer {
 	background: #d62020;
 	padding: 2rem 0;
+	border-top: 10px solid #9c0a0a;
 
 }
 
 .site-info {
 	font-size: 14px;
+}
+
+.social-media {
+	display: block;
+	float: right;
+}
+
+// 3. Media
+
+@media handheld, only screen and (max-width: 1000px) {
+	.main-navigation li {
+		display: block;
+		text-align: left;
+		border-bottom: 1px dashed #eee;
+	}
+	
+
+	a.btn { display: none; }
+	.menu-toggle{
+	float: right;
+    padding: 1em;
+	}
+
+	.grid-mid {
+    padding-right: 1em;
+    padding-left: 1em;
+}
 }
