@@ -12,7 +12,7 @@
 ----------------------------------------------------------------
 1. Global styles
 2. Specific styles
-3. Media
+3. Media Query
 
 --------------------------------------------------------------*/
 
@@ -47,14 +47,14 @@ body {
 
 .main-navigation li:nth-child(-n+2) {			//attempt to float the first 2 nav items left
 	float: left;
-	left: 20%;
+	left: 25%;
 	margin-right: 5%;
 }
 
 .main-navigation li:nth-child(n+3) {		//attempt to float the last 2 nav items right
 	position: relative;
 	float: right;
-	right: 20%;
+	right: 25%;
 	margin-left: 5%;
 }
 
@@ -79,8 +79,8 @@ body {
 
 a.custom-logo-link:hover {
 	opacity: 0.7;
+	
 }
-
 
 
 //main site content:
@@ -91,7 +91,7 @@ a.custom-logo-link:hover {
 
 
 h1.page-title {
-	margin-left: 30px;
+	margin-left: 0px;
 }
 
 .col-8-12 {					//margin for the main cols of the site-content at the top
@@ -110,10 +110,21 @@ input.search-field {
 	background: #f0f0f0;
 }
 
-#search-2 input.search-submit  {
+input.wpcf7-form-control {
+	background: #f0f0f0;	
+}
+
+textarea.wpcf7-form-control {
+	background: #f0f0f0;	
+}
+
+#search-2 input.search-submit  {		//make the input buttons green
 	background: #15d475;
 }
 
+input.wpcf7-form-control.wpcf7-submit {
+	background: #15d475;
+}
 
 
 //footer stuff:
@@ -131,11 +142,10 @@ input.search-field {
 }
 
 .social-media {
-	display: block;
-	float: right;
+	margin-left: 50px;
 }
 
-// 3. Media
+// 3. Media query
 
 @media handheld, only screen and (max-width: 1000px) {
 	.main-navigation li {

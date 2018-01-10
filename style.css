@@ -29,13 +29,13 @@ body {
 
 .main-navigation li:nth-child(-n+2) {
   float: left;
-  left: 20%;
+  left: 25%;
   margin-right: 5%; }
 
 .main-navigation li:nth-child(n+3) {
   position: relative;
   float: right;
-  right: 20%;
+  right: 25%;
   margin-left: 5%; }
 
 .main-navigation a:hover {
@@ -60,7 +60,7 @@ a.custom-logo-link:hover {
   max-height: 10%; }
 
 h1.page-title {
-  margin-left: 30px; }
+  margin-left: 0px; }
 
 .col-8-12 {
   margin-top: 100px;
@@ -73,7 +73,16 @@ h1.page-title {
 input.search-field {
   background: #f0f0f0; }
 
+input.wpcf7-form-control {
+  background: #f0f0f0; }
+
+textarea.wpcf7-form-control {
+  background: #f0f0f0; }
+
 #search-2 input.search-submit {
+  background: #15d475; }
+
+input.wpcf7-form-control.wpcf7-submit {
   background: #15d475; }
 
 #colophon.site-footer {
@@ -85,8 +94,7 @@ input.search-field {
   font-size: 14px; }
 
 .social-media {
-  display: block;
-  float: right; }
+  margin-left: 50px; }
 
 @media handheld, only screen and (max-width: 1000px) {
   .main-navigation li {
