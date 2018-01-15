@@ -12,7 +12,10 @@
  * @package hoteli
  */
 
+
 get_header(); ?>
+
+<?php featured_image(); ?>
 
 	<div id="primary" class="content-area grid-mid">
 		<main id="main" class="site-main col-8-12" role="main">
